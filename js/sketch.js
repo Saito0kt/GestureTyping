@@ -10,6 +10,9 @@ function getCode(left_gesture, right_gesture) {
     "Pointing_Up": 4,
     "Closed_Fist": 5,
     "Open_Palm": 6,
+    "arrow": 7,
+    "spase": 8,
+    
   }
   let left_code = code_array[left_gesture];
   let right_code = code_array[right_gesture];
@@ -24,7 +27,7 @@ function getCharacter(code) {
     "21": "g", "22": "h", "23": "i", "24": "j", "25": "k", "26": "l",
     "31": "m", "32": "n", "33": "o", "34": "p", "35": "q", "36": "r",
     "41": "s", "42": "t", "43": "u", "44": "v", "45": "w", "46": "x",
-    "51": "y", "52": "z", "53": " ", "54": "backspace"
+    "51": "y", "52": "z", "88": " ", "77": "backspace"
   };
   return codeToChar[code] || "";
 }
